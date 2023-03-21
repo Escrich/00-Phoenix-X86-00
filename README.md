@@ -1,2 +1,2 @@
 # 00-Phoenix-X86-00
- Phoenix 3D printer, controled by a mini PC X86, and running Klipper
+ Phoenix 3D printer, using a BTT Octopus V1.1 as a motherboard, controled by a Fujitsu Futro, mini PC X86, and running Klipper
