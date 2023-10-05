@@ -1,6 +1,8 @@
 ### Windows users: To edit this file use Notepad++, VSCode, Atom or SublimeText.
 ### Do not use Notepad or WordPad.
 
+# HP
+
 ### MacOSX users: If you use Textedit to edit this file make sure to use
 ### "plain text format" and "disable smart quotes" in "Textedit > Preferences"
 
@@ -13,7 +15,7 @@
 #
 # Defaults to auto
 #
-#camera="auto"
+camera="usb"
 
 ### Additional options to supply to MJPG Streamer for the USB camera
 #
@@ -22,6 +24,8 @@
 # Defaults to a resolution of 640x480 px and a framerate of 10 fps
 #
 #camera_usb_options="-r 640x480 -f 10"
+#camera_usb_options="-r 1280x720 -f 10 -d /dev/v4l/by-id/usb-Hewlett_Packard_HP_Webcam_HD_2300-video-index0"
+camera_usb_options="-r 1280x720 -f 10 -d /dev/input/by-id/ 03f0:e207 HP, Inc HP Webcam HD 2300"
 
 ### Additional webcam devices known to cause problems with -f
 #
@@ -70,6 +74,7 @@
 #
 #camera_http_webroot="./www-fluidd"
 #camera_http_options="-n"
+camera_http_options="-n -p 8080"
 
 ### EXPERIMENTAL
 # Support for different streamer types.
